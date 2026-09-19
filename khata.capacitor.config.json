@@ -1,0 +1,8 @@
+{
+  "appId": "com.fawad.karyana",
+  "appName": "Fawad Karyana Store",
+  "webDir": "www/khata",
+  "server": {
+    "androidScheme": "https"
+  }
+}

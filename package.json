@@ -1,0 +1,12 @@
+{
+  "name": "fawad-karyana-store",
+  "version": "1.0.0",
+  "description": "Fawad Karyana Store - Digital Khata",
+  "author": "Yasir Khan",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/core": "^6.0.0"
+  }
+}
