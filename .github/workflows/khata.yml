@@ -1,4 +1,4 @@
-name: Build Fawad Karyana APK
+name: Build Hisab Kitab APK
 
 on:
   workflow_dispatch:
@@ -39,10 +39,16 @@ jobs:
             cp khata.capacitor.config.json capacitor.config.json
           fi
 
+      - name: Remove old Android folder
+        run: rm -rf android
+
       - name: Add Android platform
+        run: npx cap add android
+
+      - name: Generate icons
         run: |
-          if [ ! -d android ]; then
-            npx cap add android
+          if [ -f resources/icon.png ]; then
+            npx @capacitor/assets generate --iconBackgroundColor '#1e3a5f' --iconBackgroundColorDark '#1e3a5f' --splashBackgroundColor '#1e3a5f' --splashBackgroundColorDark '#1e3a5f'
           fi
 
       - name: Sync
@@ -57,5 +63,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: fawad-karyana-apk
+          name: hisab-kitab-apk
           path: android/app/build/outputs/apk/debug/app-debug.apk
