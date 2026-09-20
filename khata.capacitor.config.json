@@ -1,6 +1,6 @@
 {
-  "appId": "com.fawad.karyana",
-  "appName": "Fawad Karyana Store",
+  "appId": "com.yasirkhan.hisabkitab",
+  "appName": "Hisab Kitab",
   "webDir": "www/khata",
   "server": {
     "androidScheme": "https"
